@@ -4,10 +4,10 @@
     "esModuleInterop": true,
     "jsx": "react",
     "lib": [
+      "WebWorker",
       "dom",
       "es2017",
       "dom.iterable",
-      "webworker"
     ],
     "baseUrl": "src",
     "paths": {
@@ -17,5 +17,6 @@
     }
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist", "src/serviceWorker/service.worker.ts"],
+  "exclude": ["node_modules", "dist", "src/service.worker.ts"],
+  "files": ["src/service.worker.ts"]
 }

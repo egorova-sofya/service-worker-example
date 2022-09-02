@@ -4,7 +4,7 @@
   "scripts": {
     "prettier": "prettier --write ./",
     "prettier-check": "prettier --check ./",
-    "start": "NODE_ENV=development webpack serve",
+    "start": "cross-env NODE_ENV=development webpack serve",
     "build": "webpack"
   },
   "dependencies": {
@@ -12,6 +12,7 @@
     "@babel/core": "7.18.10",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "pre-commit": "^1.2.2",

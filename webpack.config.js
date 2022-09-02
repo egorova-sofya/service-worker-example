@@ -5,7 +5,7 @@ module.exports = {
   mode: process.env.NODE_ENV || 'production',
   entry: {
     main: './src/index.tsx',
-    sw: './src/serviceWorker/service.worker.ts',
+    sw: './src/service.worker.ts',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
