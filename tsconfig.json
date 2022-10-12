@@ -17,6 +17,6 @@
     }
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist", "src/service.worker.ts"],
+  "exclude": ["node_modules", "dist", "src/service.worker"],
   "files": ["src/service.worker.ts"]
 }

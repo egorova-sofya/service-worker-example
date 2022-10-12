@@ -56,6 +56,7 @@ module.exports = {
       overlay: false,
     },
     open: true,
+    hot: true,
     historyApiFallback: true,
   },
 };
