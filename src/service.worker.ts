@@ -100,3 +100,15 @@ _self.addEventListener('fetch', (e) => {
     );
   }
 });
+
+//web pushes
+_self.addEventListener('push', function (event) {
+  console.log(event);
+  const payload = event.data ? event.data.text() : 'Alohomora!';
+  console.log(payload);
+
+  event.waitUntil(
+    //показывает уведомление с заголовком и телом сообщения
+    _self.registration.showNotification('My first push', { body: payload })
+  );
+});
