@@ -1,6 +1,7 @@
 const _self = self as unknown as ServiceWorkerGlobalScope;
 
 _self.addEventListener('fetch', (e) => {
+
   e.respondWith(
     (async () => {
       if (e.request.url.search(/\/api\//gm) !== -1) {

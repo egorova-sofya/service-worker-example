@@ -5,13 +5,14 @@ import { BrowserRouter } from 'react-router-dom';
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
-    //@ts-ignore
     navigator.serviceWorker
       .register('/sw.js')
       .then(function () {
         console.log('Service Worker Registered!!');
       })
-      .catch((e: Error) => console.error('cant register SW', e));
+      .catch((error) => {
+        console.error('cant register SW', error);
+      });
   });
 }
 
