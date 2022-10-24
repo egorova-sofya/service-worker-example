@@ -26,9 +26,7 @@ const Main = () => {
       <div className="grid" id="grid"></div>
 
       <Link to="/test">Test</Link>
-      <p>
-        <Link to="/api">api</Link>
-      </p>
+      <p>{/* <Link to="/api">api</Link> */}</p>
       {/* {testData &&
         testData.map((item) => (
           <p key={item.id} style={{ color: '#fff' }}>

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Api = () => {
   const [testData, setTestData] = useState<Array<any>>();
-  useEffect(() => {
-    fetch('https://api')
-      .then((response) => response.json())
-      .then((json) => setTestData(json));
-  }, []);
+  // useEffect(() => {
+  //   fetch('https://api')
+  //     .then((response) => response.json())
+  //     .then((json) => setTestData(json));
+  // }, []);
   // console.log(testData);
   return (
     <>

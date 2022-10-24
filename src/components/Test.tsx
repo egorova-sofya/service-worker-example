@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Test = () => {
   const [testData, setTestData] = useState<Array<any>>();
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/photos')
+    fetch('https://jsonplaceholder.typicode.com/api/test')
       .then((response) => response.json())
       .then((json) => setTestData(json));
   }, []);
